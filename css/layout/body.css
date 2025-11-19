@@ -1,0 +1,119 @@
+html{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#body-index {
+    margin: 0;
+    display: grid;
+    width: 100vw;
+    overflow-x: hidden;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "my-header-index"
+        "my-nav-index"
+        "my-main-index"
+        "my-footer-index";
+}
+
+
+#header-index{
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    grid-area: my-header-index;
+}
+
+#nav-index {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    grid-area: my-nav-index;
+}
+
+#main-index{
+    width: 100%;
+    grid-area: my-main-index;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left:1.1rem ;
+}
+
+#footer-index{
+    grid-area: my-footer-index;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width:1280px) {
+
+   #body-index {
+        all: unset;
+        margin: 0;
+        display: grid;
+        width: 100%;
+        overflow-x: hidden;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "my-header-index"
+            "my-nav-index"
+            "my-main-index"
+            "my-footer-index";
+    }
+
+    #header-index{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            grid-area: my-header-index;
+            font-family: sans-serif;
+            z-index: 1;
+        }
+
+    #nav-index {
+        all: unset;
+        grid-area: my-nav-index;
+        display: flex;
+        position: relative;
+        background-color: #34495e;
+        border-radius: 8px;
+        font-size: 0;
+        justify-items: center;
+        z-index: 2;
+        /* opacity: 0; */
+        transition: opacity 0.4s;
+    }
+
+    #main-index{
+        all: unset;
+        grid-area: my-main-index;
+        display: grid;
+        border: 4px solidlightsalmon;
+        gap: 10rem;
+        margin-top: 9rem;
+    }
+
+
+    #footer-index{
+        all: unset;
+        grid-area: my-footer-index;
+        display: flex;
+        flex-direction: column;
+        background: #0d1b2a;
+        color: #e0e1dd;
+        border-top: none;
+        gap: 2rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+
+
+}

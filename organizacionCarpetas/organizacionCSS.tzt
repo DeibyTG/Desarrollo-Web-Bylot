@@ -1,0 +1,20 @@
+css/
+├── main.css          # archivo principal que importa todo (si usas @import o build tools)
+├── base/             # estilos base y globales
+│   ├── reset.css     # reset o normalize
+│   ├── typography.css# fuentes y estilos de texto
+│   └── variables.css # colores, tamaños, z-index, etc.
+├── layout/           # estructura general de la página
+│   ├── header.css
+│   ├── footer.css
+│   └── grid.css
+├── components/       # piezas de UI (botones, modales, navbar, cards, etc.)
+│   ├── button.css
+│   ├── modal.css
+│   └── navbar.css
+├── pages/            # estilos específicos de cada página
+│   ├── home.css
+│   └── dashboard.css
+└── utils/            # clases utilitarias
+    ├── helpers.css   # ej: .hidden, .text-center
+    └── animations.css

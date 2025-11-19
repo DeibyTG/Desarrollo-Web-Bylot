@@ -1,0 +1,320 @@
+@media (min-width: 1024px) {
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f9fafb;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.main-presupuesto{
+    display: grid;
+    grid-template-areas: 
+        "titulo titulo"
+        "presupuesto resumenPresupuesto";
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+    .contenedor-titulo{
+        text-align: center;
+        grid-area: titulo;
+    }
+        .contenedor-titulo>h2{
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: italic;
+            font-size: 2rem;
+            font-variation-settings: "wdth" 100;
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+
+        .contenedor-titulo>p{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline
+        }
+
+
+        .contenedor-formulario{
+            background: #ffffff;
+            border: 3px solid #000000;
+            border-radius: 0;
+            box-shadow: 8px 8px 0 #000000;
+            transition: all 0.2s ease;
+            gap:2rem;
+        }
+         
+            .contenedor-formulario fieldset {
+                border: 2px solid #2c3e50;
+                border-radius: 1rem;
+                padding: 1.8rem 2rem;
+                margin-bottom: 1.5rem;
+                background: #ffffff;
+                box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease;
+            }
+
+            .contenedor-formulario legend {
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                background: linear-gradient(90deg, #34495e 0%, #17253c 100%);
+                color: #fff;
+                padding: 0.6rem 1.2rem;
+                border-radius: 0.5rem;
+                margin-bottom: 1rem;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+                letter-spacing: 1px;
+            }
+
+            .contenedor-formulario label{
+                display: flex;
+                gap: 2rem;
+                font-size: 12px;
+                font-weight: 700;
+                color: #000000;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-family: 'Poppins', sans-serif;
+                line-height: 1.4;
+                transition: 0.3s;
+            }
+
+
+
+            #parteSuperior{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "fieldset1 fieldset2";
+                text-wrap:wrap;
+                height: auto;
+            }
+
+            #fieldset1{
+                overflow: hidden;
+                text-align: left;
+                grid-area: fieldset1;
+                height: auto;
+            }
+
+            #fieldset1 input {
+                margin-top: 0.3rem;
+                margin-bottom: 1rem;
+                background: #ffffff;
+                border: 3px solid #000000;
+                border-radius: 0;
+                padding: 1rem;
+                box-shadow: 8px 8px 0 #000000;
+                transition: all 0.2s ease;
+
+            }
+
+            #fieldset1 input:hover {
+                background: #69a4cd;
+                transition: 1s;
+                border-radius: 1rem 0rem ;
+            }
+
+            #fieldset2{
+                padding: 2rem;
+                width: auto;
+                grid-area: fieldset2;
+            }
+
+            #informacionCliente{
+                margin-bottom: 2rem;
+                display: flex;
+                width: auto;
+                margin-top: 0.3rem;
+                margin-bottom: 4rem;
+                background: #ffffff;
+                border: 3px solid #000000;
+                border-radius: 0;
+                padding: 4rem;
+                box-shadow: 8px 8px 0 #000000;
+                transition: all 0.2s ease;
+            }
+            
+
+
+            #fieldset2 [type="range"]{
+                width: 20rem;
+                height: 3rem;
+                background: linear-gradient(180deg, #0c0c0e, #1a1a1c);
+                border-radius: 8px;
+                outline: none;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                margin-top: 8px;
+            }
+
+            #fieldset3 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            #fieldset3 > div{
+                display: flex;
+                width: auto;
+                margin-top: 0.3rem;
+                margin-bottom: 1rem;
+                background: #ffffff;
+                border: 3px solid #000000;
+                border-radius: 0;
+                padding: 1rem;
+                box-shadow: 8px 8px 0 #000000;
+                transition: all 0.2s ease;
+            }
+
+                #fieldset3 [type="checkbox"]{
+                    accent-color: #4a82dd;
+                    transform: scale(1.3);
+                    margin-left: 0.5rem;
+                }
+
+
+                #fieldset3>div:hover{
+                    background: #69a4cd;
+                    transition: 1s;
+                    border-radius: 1rem 1rem ;
+                }
+
+
+            .contenedor-condiciones{
+                display: flex;
+                width: auto;
+                margin-top: 0.3rem;
+                margin-bottom: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                background: #ffffff;
+                border: 3px solid #000000;
+                border-radius: 0;
+                padding: 1rem;
+                box-shadow: 8px 8px 0 #000000;
+                transition: all 0.2s ease;
+                justify-content: center;
+            }
+
+                .contenedor-condiciones >input[type="checkbox"] {
+                    accent-color: green;
+                    transform: scale(1.5);
+                    margin-left: 0.6rem;
+                }
+
+                .contenedor-condiciones > input:hover{
+                    background: #69a4cd;
+                    transition: 1s;
+                    border-radius: 1rem 1rem;
+                }
+
+            #botones{
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                cursor: pointer;
+                gap: 3rem;
+                margin-bottom: 1rem;
+                margin-top: 3rem;
+            }
+
+            #enviar{
+                width: auto;
+                height: auto;
+            }
+
+
+    .resumen-presupuesto{
+        grid-area: resumenPresupuesto;
+        background: #ffffff;
+        border: 3px solid #000000;
+        border-radius: 0;
+        box-shadow: 8px 8px 0 #000000;
+        transition: all 0.3s ease;
+        padding: 2rem;
+        font-family: "Poppins", sans-serif;
+    }
+
+        .resumen-presupuesto:hover {
+            background: #f5f5f5;
+            border-radius: 1rem 1rem;
+            transition: 0.8s;   
+        }
+            
+        .resumen-presupuesto fieldset {
+            border: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .resumen-presupuesto legend {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 3px solid #000;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;       
+        }
+
+        .resumen-presupuesto div {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+            padding: .75rem 1rem;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 0 #000;
+            border-radius: 0;
+            background: #fff;
+            transition: all 0.3s ease;       
+        }
+
+        .resumen-presupuesto h3{
+            font-size: 1rem;
+        }
+
+        .resumen-presupuesto label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        #totalPresupuesto {
+            font-weight: 900;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;       
+        }
+
+        #cantidadTotalPresupuesto {
+            font-weight: 900;
+            font-size: 1rem;
+            text-align: right;       
+        }
+    }

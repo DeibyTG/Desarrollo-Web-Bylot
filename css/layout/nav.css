@@ -1,0 +1,186 @@
+/* nav de index */
+
+.contenedor-enlaces-nav-mobil{
+    background-color: black;
+}
+
+    #botonServicios{
+        width: 100%;
+        height: auto;
+        /* background: #fff; */
+        backface-visibility: hidden;
+        border-style: solid;
+        border-width: .125rem;
+        box-sizing: border-box;
+        color: #212121;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.125rem;
+        font-weight: 700;
+        letter-spacing: -.01em;
+        line-height: 1.3;
+        padding: .875rem 1.125rem;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transform: translateZ(0) scale(1);
+        transition: transform .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+        #botonServicios:not(:disabled):hover {
+            transform: scale(1.05);
+        }
+
+        #botonServicios:not(:disabled):hover:active {
+            transform: scale(1.05) translateY(.125rem);
+        }
+
+        #botonServicios:focus {
+            outline: 0 solid transparent;
+        }
+
+        #botonServicios:focus:before {
+            content: "";
+            left: calc(-1*.375rem);
+            pointer-events: none;
+            position: absolute;
+            top: calc(-1*.375rem);
+            transition: border-radius;
+            user-select: none;
+        }
+
+        #botonServicios:focus:not(:focus-visible) {
+            outline: 0 solid transparent;
+        }
+
+        #botonServicios:focus:not(:focus-visible):before {
+            border-width: 0;
+        }
+
+        #botonServicios:not(:disabled):active {
+            transform: translateY(.125rem);
+        }
+
+    .contenedor-enlaces-nav{
+        max-height: 0rem;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }    
+
+        .contenedor-enlaces-nav a{
+            width: 100%;
+            height: 100%;
+            color: black;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+            padding: 1rem;
+        }
+
+        /* #opcion1{
+            background: #1abc9c;
+        }
+        #opcion2{
+            background: #e74c3c;
+        }
+        #opcion3{
+            background: #3498db;
+        }
+        #opcion4{
+            background: #9b59b6;
+        } */
+
+        .contenedor-enlaces-nav.desplegado{
+            max-height: 14rem;
+            overflow: visible;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+        }
+
+@media screen and (min-width:1280px){
+    
+    #nav-index.visible {
+        opacity: 1;
+        transition: opacity 1s;
+    }
+
+    #nav-index.estatic{
+        margin-top: 6.8rem;
+        position: fixed;
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-enlaces-nav {
+        all: unset;
+        width: 100%;
+        --items: 4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-enlaces-nav>a {
+        all: unset;
+        flex: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .contenedor-enlaces-nav .animation {
+        all: unset;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        width: calc(100% / var(--items));
+        transition: all .3s ease;
+        border-radius: 8px;
+        z-index: 0;
+        background: #1abc9c;
+    }
+
+    .contenedor-enlaces-nav a:nth-child(1):hover~.animation {
+        left: calc(0 * (100% / var(--items)));
+        background: #1abc9c;
+    }
+
+    .contenedor-enlaces-nav a:nth-child(2):hover~.animation {
+        left: calc(1 * (100% / var(--items)));
+        background: #e74c3c;
+    }
+
+    .contenedor-enlaces-nav a:nth-child(3):hover~.animation {
+        left: calc(2 * (100% / var(--items)));
+        background: #3498db;
+    }
+
+    .contenedor-enlaces-nav a:nth-child(4):hover~.animation {
+        left: calc(3 * (100% / var(--items)));
+        background: #9b59b6;
+    }
+    
+    .contenedor-enlaces-nav-mobil{
+        display: none;
+    }
+
+}
+        

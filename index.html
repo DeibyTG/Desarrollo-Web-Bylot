@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo y diseño web By/Lot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/layout/nav.css">
+    <link rel="stylesheet" href="./css/layout/footer.css">
+    <link rel="stylesheet" href="./css/layout/body.css">
+    <link rel="stylesheet" href="./css/pages/main-index.css">
+    <script src="./js/main.js"  type="module" ></script>
+</head>
+<body id="body-index">
+    <header id="header-index" class="header">
+        <div class="contenedor-enlaces-header" id="contenedor-header">
+            <div class="contenedor-logo" id="logoHeader">
+                <picture>
+                    <img alt="logo-empresa" class="logo-empresa-header" src="img/logo-empresa.png">
+                </picture>
+            </div>
+            <div class="contenedor-opciones">
+                <ul class="contenedor-opciones-header">
+                    <li class="contenedor-enlace-pagina"><a href="view/presupuesto.html" class="enlace-pagina">presupuesto</a></li>
+                    <li class="contenedor-enlace-pagina"><a href="view/contacto.html" class="enlace-pagina">contacto</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-enlaces-rrss">
+                <picture class="desplegable">
+                    <img alt="menu desplegable" src="img/icons/icono-menu.png" id="fotoMenu">
+                </picture> 
+                <ul class="enlaces-rrss">
+                    <li>
+                        <a href="view/presupuesto.html">
+                            <picture>
+                                <img class="icon-header" alt="icono-correo" src="img/icons/icon-mail.png">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <picture>
+                                <img class="icon-header" alt="icono-telefono" src="img/icons/icon-telefono.png">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/bylot-web-development/about/?viewAsMember=true">
+                            <picture>
+                                <img class="icon-header" alt="icono-linkedin" src="img/icons/icon-linkedin.png">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="contendor-imagen-header" id="imagenHeader">
+            <picture id="bannerScritorio">
+                <img alt="banner para escritorio" class="foto-header-main" src="img/foto-header-main.png">
+            </picture>
+        </div>
+        <div class="contendor-imagen-header">
+            <picture id="bannerMobil">
+                <img alt="Banner para mobil" class="foto-header-main" src="img/banner-mobil-azul.png">
+            </picture>
+        </div>
+        <div class="contenedor-slogan" id="sloganHeader">
+            <div class="slogan" >
+                <h1>De tu idea a la realida digital</h1>
+            </div>
+        </div>
+    </header>
+    <nav id="nav-index" class="nav"> 
+        <div class="contenedor-enlaces-nav-mobil">
+            <button id="botonServicios">Nuestros Servicios ▾</button>
+        </div>
+        <div class="contenedor-enlaces-nav" id="enlacesEscritorio">
+            <a href="#landing-page-main" id="opcion1">Landing Pages</a>
+            <a href="#ecommerce-main" id="opcion2">Tiendas E-Commerce</a>
+            <a href="#webCorporativa-main" id="opcion3">Web Corporativa</a>
+            <a href="#blog-main" id="opcion4">Bolg/Paginas Personalizadas</a>
+            <div class="animation start-Landing Pages"></div>
+        </div>
+    </nav>
+    <main id="main-index">
+        <section class="contenedor-informacion-servicios-main" id="landing-page-main">
+            <article class="deslizador-landingPage"></article>
+            <article class="seccion-informacion" id="seccion-landingPage">
+                <div class="info-seccion-main" id="informacionLanding">
+                    <h2 id="titulo-landing-page" class="tituloInformacion"></h2>
+                    <p id="descripcion-landing-page" class="contenidoInformacion"></p>
+                </div>
+                <div class="media-main" id="mediaMain">
+                    <picture>
+                        <img id="img-landing-page" alt="foto landing" class="foto-main">
+                    </picture>
+                </div>
+            </article>
+        </section>
+        <section class="tarjetas-importantes">
+            <div class="tarjeta-info">
+                <picture class="contenedor-icono-tarjeta">
+                    <img class="icono-tarjeta" alt="icono" src="img/icons/landing-page.png">
+                </picture>
+                <label class="titulo-tarjeta">Diseño Web Atractivo y Funcional</label>
+                <label class="info-rapida-tarjeta">Creamos sitios modernos, adaptados a tu marca y optimizados para ofrecer la mejor
+                    experiencia al usuario. Cada detalle
+                    está pensado para convertir visitantes en clientes.</label>
+            </div>
+            <div class="tarjeta-info">
+                <picture class="contenedor-icono-tarjeta">
+                    <img class="icono-tarjeta" alt="icono seo" src="img/icons/seo-icono.png">
+                </picture>
+                <label class="titulo-tarjeta">Posicionamiento en Google</label> 
+                <label class="info-rapida-tarjeta">Desarrollamos páginas rápidas y optimizadas para buscadores, asegurando que tu negocio aparezca en los primeros
+                resultados y atraiga más clientes potenciales.</label>
+            </div>
+            <div class="tarjeta-info">
+                <picture class="contenedor-icono-tarjeta">
+                    <img class="icono-tarjeta" alt="icono" src="img/icons/soporte-tecnico.png">
+                </picture>
+                <label class="titulo-tarjeta">Tecnología Segura y Soporte Constante</label>
+                <label class="info-rapida-tarjeta">Trabajamos con las últimas tecnologías para que tu web sea segura, escalable y fácil de gestionar. Además, ofrecemos
+                soporte continuo para que nunca te quedes atrás.</label>
+            </div>
+        </section>
+        <section class="contenedor-informacion-servicios-main" id="ecommerce-main">
+            <article class="seccion-informacion" id="seccion-Ecommerce">
+                <div class="info-seccion-main" id="infoEcommerce">
+                    <h2 id="titulo-ecommerce" class="tituloInformacion"></h2>
+                    <p id="descripcion-ecommerce" class="contenidoInformacion"></p>
+                </div>
+                <div class="media-marmol-granito">
+                    <img id="img-ecommerce" alt="foto ecommerce" class="foto-main">
+                </div>
+            </article>
+        </section>
+        <section class="contenedor-informacion-servicios-main" id="webCorporativa-main">
+            <article class="seccion-informacion" id="seccion-webCorporativa">
+                <div class="info-seccion-main" id="info-webCorporativa">
+                    <h2 id="titulo-web-corporativa" class="tituloInformacion"></h2>
+                    <p id="descripcion-web-corporativa" class="contenidoInformacion"></p>
+                </div>
+                <div class="media-marmol-granito" id="imagenCorporativa">
+                    <picture>
+                        <img id="img-web-corporativa" alt="foto web corporativa" class="foto-main">
+                    </picture>
+                </div>
+            </article>
+        </section>
+        <section class="contenedor-informacion-servicios-main" id="blog-main">
+            <article class="seccion-informacion" id="seccion-blog">
+                <div class="info-seccion-main" id="infoPortal">
+                    <h2 id="titulo-blog-portal" class="tituloInformacion"></h2>
+                    <p id="descripcion-blog-portal" class="contenidoInformacion"></p>
+                </div>
+                <div class="media-marmol-granito">
+                    <picture>
+                        <img id="img-blog-portal" alt="foto blog" class="foto-main">
+                    </picture>
+                </div>
+            </article>
+            <article class="seccion-informacion" id="seccion-plataforma-personalizada">
+                <div class="info-seccion-main" id="infoPerso">
+                    <h2 id="titulo-plataforma-personalizada" class="tituloInformacion"></h2>
+                    <p id="descripcion-plataforma-personalizada" class="contenidoInformacion"></p>
+                </div>
+                <div class="media-marmol-granito">
+                    <picture>
+                        <img id="img-plataforma-personalizada" alt="foto plataforma" class="foto-main">
+                    </picture>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer id="footer-index" class="footer">
+        <div class="seccion-empresa">
+            <div class="logo-nombre">
+                <picture>
+                    <img id="logo-footer" alt="logo del footer" src="img/logo-empresa.png">
+                </picture>
+            </div>
+            <div class="slogan-footer">
+                <h3>“De tu idea a la realidad digital”</h3>
+            </div>
+        </div>
+        <div class="informacion-empresa">
+            <div class="contacto">
+                <label>Contacto</label>
+                <ul class="listaContacto">
+                    <li>Email: desarrollo.bylot@gmail.com</li>
+                    <li>Telefono: 611483400</li>
+                    <li>Dirección: Plaza L'om 11 1-4 Castello 46270 Valencia</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <div id="tituloRedes">
+                    <label>Redes</label>
+                </div>
+                <div class="links-redes">
+                    <a>LinkedIn</a>
+                    <a>Instagram</a>
+                    <a>GitHub</a>
+                </div>
+            </div>
+            <div class="navegacion">
+                <div>
+                    <label>Secciones</label>
+                </div>
+                <div class="linksPagina">
+                    <a href="#landing-page-main">Landing Pages</a>
+                    <a href="#ecommerce-main">Tiendas E-Commerce</a>
+                    <a href="#webCorporativa-main">Web Corporativa</a>
+                    <a href="#blog-main">Bolg/Portal Contenido</a>
+                </div>
+            </div>
+        </div>
+        <div class="derechos-empresa">
+            <div class="indicador-derechos">
+                <label>© 2025 By/Lot - Todos los derechos reservados</label>
+            </div>
+            <div class="links-informativos">
+                <a>Aviso Legal</a>
+                <a>Privacidad</a>
+                <a>Cookies</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

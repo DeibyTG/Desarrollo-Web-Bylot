@@ -1,0 +1,38 @@
+{
+    "landing-page":{
+        "titulo":"Landing Page",
+        "descripcion":"En BY/LOT diseñamos landing pages modernas, rápidas y optimizadas para que cada visita se convierta en una oportunidad real. Creamos páginas claras, con un diseño atractivo y orientadas a tus objetivos, ya sea captar clientes, vender productos o lanzar campañas. Nos enfocamos en la experiencia del usuario y en un desarrollo ágil para que tu marca destaque y genere resultados desde el primer clic.",
+        "foto":"img/landing-page/landing-pages.jpg",
+        "precio":"400",
+        "moneda":"€"
+    },
+    "ecommerce":{
+        "titulo":"Tiendas E-Commerce",
+        "descripcion":"Con nuestras tiendas online podrás vender tus productos o servicios de forma fácil, rápida y segura. Integramos pasarelas de pago confiables, carrito de compra, gestión de inventario y una experiencia intuitiva para tus clientes. Tu negocio estará disponible las 24 horas, los 7 días de la semana, generando ventas incluso mientras duermes.",
+        "foto":"img/tienda-ecommerce/tiendaEcommerce.jpg",
+        "precio":"1000",
+        "moneda":"€"
+    },
+    "web-corporativa":{
+        "titulo":"Web Corporativa",
+        "descripcion":"Una web corporativa es la carta de presentación digital de tu empresa. Diseñamos sitios que transmiten confianza, profesionalidad y reflejan la identidad de tu marca. Incluimos secciones como servicios, equipo, testimonios y contacto, con un diseño limpio y estructurado para que tu negocio destaque frente a la competencia.",
+        "foto":"img/web-corporativa/webCorporativa.jpg",
+        "precio":"1500",
+        "moneda":"€"
+    },
+    "blog-portal":{
+        "titulo":"Blog / Portal de Contenidos",
+        "descripcion":"Los blogs y portales de contenidos son la mejor herramienta para atraer tráfico orgánico y fidelizar a tu audiencia. Creamos plataformas dinámicas, fáciles de gestionar y optimizadas para SEO, donde podrás publicar artículos, noticias o recursos que posicionen tu marca como referente en tu sector.",
+        "foto":"img/blog/blog.png",
+        "precio":"200",
+        "moneda":"€"
+    },
+    "plataforma-personalizada":{
+        "titulo":"Plataformas Personalizadas",
+        "descripcion":"Cada negocio es único y a veces necesita soluciones específicas. Desarrollamos plataformas personalizadas como sistemas de reservas, directorios, membresías o intranets, adaptadas a tus necesidades. Usamos tecnologías escalables y seguras para garantizar que tu web pueda crecer contigo y ofrecer siempre el mejor rendimiento.",
+        "foto":"img/plataforma/plataforma.png",
+        "precio":"3000",
+        "moneda":"€"
+    }
+
+}

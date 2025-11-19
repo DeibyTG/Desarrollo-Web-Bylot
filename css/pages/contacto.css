@@ -1,0 +1,98 @@
+@media (min-width: 1024px) {
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f9fafb;
+    color: #222;
+    overflow-x: hidden;
+}
+
+#main-contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  gap: 3rem;
+}
+
+#titulo-mapa {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#titulo-mapa h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #303f9f;
+}
+
+  #contenedor-mapa{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  #input-informacion-mapa{
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+    #input-informacion-mapa h2 {
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+  .introduccionInformacion{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+
+  .introduccionInformacion > input {
+    background: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 240px;
+  }
+
+  .introduccionInformacion>input:focus {
+    outline: none;
+    border-color: #3f51b5;
+    box-shadow: 0 4px 16px rgba(63, 81, 181, 0.2);
+  }
+
+  #map{
+    flex: 1;
+    height: 28rem;
+    min-width: 360px;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}

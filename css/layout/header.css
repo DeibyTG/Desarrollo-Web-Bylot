@@ -1,0 +1,275 @@
+/* Header index */
+
+    #contenedor-header{
+        position: relative;
+        background: #0d1b2a;
+        z-index: 2;
+    }
+
+    #logoHeader{
+        position: relative;
+    }
+
+    #logoHeader>picture>img{
+        width: 10rem;
+        max-width: 150px;
+        height: auto;
+    }
+
+    .contenedor-enlaces-rrss {
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+
+    #fotoMenu{
+        width: auto;
+        height: 100%;
+    }
+
+    .enlaces-rrss{
+        display: none;
+    }
+
+
+    .icon-header {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .contenedor-slogan{
+        position: absolute;
+        width: 100%;
+        top: 33%;
+        left: 50%;
+        z-index: 2;
+    }
+
+    .slogan>h1{
+        transform: translate(-50%, -50%);
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        padding: 1rem;
+        width: 100%;
+        max-width: 45rem;
+        z-index: 2;
+    }
+    
+    #bannerMobil img{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        position: relative; 
+        display: block;
+        z-index: 1;
+    }
+
+    #bannerScritorio{
+        display: none;
+    }
+
+    .contenedor-opciones{
+        display: auto;
+        width: auto;
+        display: flex;
+        justify-content: right;
+        position: relative;
+    }
+
+    .contenedor-opciones-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 5rem;
+        height: auto;
+        list-style: none;
+        padding-right: 2rem;
+        position: absolute;
+        top: 0;
+        display: none;
+    }
+
+    .contenedor-enlace-pagina{
+        width: 100%;
+        background: #fff;
+        backface-visibility: hidden;
+        border-width: .125rem;
+        box-sizing: border-box;
+        color: #212121;
+        padding:0.5rem;
+    }
+
+    .enlace-pagina{
+        background-color: red;
+        width: 17rem;
+        text-decoration: none;
+        border-style: solid;
+    }
+
+
+    .contenedor-opciones-header.visible{
+        width: 7rem;
+        font-family:"Poppins", sans-serif;
+        text-transform: uppercase;
+        margin-top: 0;
+        display: flex;
+        background: #fff;
+    }
+    
+
+    
+
+
+@media screen and (min-width: 1280px) {
+
+    /* header para pantallas grandes */
+
+        .contenedor-enlaces-header {
+            width: 100%;
+            height: auto;
+            display: flex;
+            z-index: 1;
+            background: linear-gradient(#34495e 60%, rgba(83, 122, 180, 0.939));     
+        }
+
+            .contenedor-enlaces-header.estatco {
+                width: 100%;
+                top: 0;
+                height: auto;
+                display: flex;
+                z-index: 9999;
+                background: linear-gradient(#4a82dd 60%, (83, 122, 180, 0.939));       
+            }
+
+
+        .contenedor-logo {
+            width: 10vw;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .logo-empresa-header {
+            width: 10rem;
+            height: auto;
+            z-index: 2;       
+        }
+
+        .contenedor-opciones {
+            width: 70vw;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        #inicio-header{
+            text-align: center;
+            width: auto;
+            padding: 0.4rem;
+            background-color: black;
+            border: 4px solid black;
+            border-radius: 1rem 1rem 0 0;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;       
+        }  
+
+        .contenedor-opciones>ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            text-transform: capitalize;
+            list-style: none;
+            color: white;
+            font-size: 2rem;
+            border-bottom: 2px solid white;       
+        }
+
+        .contenedor-opciones>ul>li>a {
+            color: white;
+            cursor: pointer;
+            text-decoration: none;       
+        }
+
+        .contenedor-enlaces-rrss {
+            width: 10vw;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1;       
+        }
+
+        .desplegable{
+            display: none;
+        }
+
+        .contenedor-enlaces-rrss>ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;       
+        }
+
+
+        .contenedor-enlaces-rrss>ul>li {
+            align-items: center;
+            justify-content: center;       
+        }
+
+        .icon-header {
+            width: 1.5rem;
+            height: 1.5rem;       
+        }
+
+
+        .contendor-imagen-header {
+            height: auto;
+            overflow: hidden;
+        }
+
+        .foto-header-main {
+            width: 100vw;
+            height: auto;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #sloganHeader{
+            top: 20%;
+            left: 50%;
+            transform: none;
+            width: auto;
+            text-align: left;
+            z-index: 10;
+        }
+
+        .slogan h1 {
+            position: static;
+            font-size: 5rem;
+            text-decoration: underline;
+            color: white;
+            font-family: "Poppins", sans-serif;
+            z-index: 10;
+        }       
+
+
+        #bannerMobil{
+            display: none;
+        }
+
+        #bannerScritorio{
+            display: flex;
+            overflow: hidden;
+        }
+
+
+    }

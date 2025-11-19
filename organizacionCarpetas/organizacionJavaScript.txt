@@ -1,0 +1,40 @@
+estructura a seguir para el folder de javaScript 
+
+js/
+├── main.js             # Punto de entrada principal
+├── ui/                 # Código relacionado con la interfaz (interacciones, DOM)
+│   ├── navbar.js
+│   ├── modal.js
+│   └── dropdown.js
+├── utils/              # Funciones reutilizables
+│   ├── formatDate.js
+│   ├── validators.js
+│   └── helpers.js
+├── services/           # Conexiones a APIs o lógica de datos
+│   ├── api.js
+│   └── auth.js
+├── components/         # Bloques de UI más estructurados
+│   ├── carousel.js
+│   ├── card.js
+│   └── form.js
+├── config/             # Configuración y constantes
+│   └── routes.js
+└── vendors/            # Librerías de terceros que no instalas con npm (si aplica)
+    └── someLib.js
+
+
+
+
+main.js → suele ser el archivo que inicializa todo (listeners, carga inicial de UI, etc.).
+
+ui/ → manipulación directa del DOM, botones, menús, modales.
+
+utils/ → funciones genéricas que no dependen del proyecto (ejemplo: formatear fechas, validar emails).
+
+services/ → si consumes APIs, aquí guardas la lógica de fetch o axios.
+
+components/ → cuando un bloque de UI es complejo y se reutiliza (ejemplo: un carrusel, un formulario dinámico).
+
+config/ → constantes globales (URLs, claves, rutas).
+
+vendors/ → librerías que no vienen de un CDN o npm.

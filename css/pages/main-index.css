@@ -1,0 +1,380 @@
+
+.contenedor-informacion-servicios-main {
+  max-width: 144px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent; /* por defecto */
+  display: block; /* por defecto */
+  overflow-y: visible;
+}
+
+.deslizador-landingPage{
+    display: none;
+}
+    .seccion-informacion{
+        margin-top: 2rem;
+        width: 25rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: auto;
+        border-radius: 1.2rem;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;       
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        gap:1rem;
+        z-index: 2;
+        position: relative;
+    }
+
+    .info-seccion-main{
+        padding: 1rem;
+        border-radius: 2rem;
+        margin: 1rem;
+    }
+
+        #seccion-landingPage{
+            margin-bottom: 2rem;
+        }
+
+        #informacionLanding{
+         background: #b0ddf9;
+        }
+
+        #infoEcommerce{
+         background: #ef7f72;
+        }
+
+        #info-webCorporativa{
+        background: #3498db;
+        }
+
+        #infoPortal{
+            background: #9b59b6;
+        }
+
+        #infoPerso{
+            background: #f1ffac;
+        }
+
+        .tituloInformacion{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .contenidoInformacion{
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: italic;
+            font-variation-settings: "wdth" 100;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .foto-main{
+            width: 22rem;
+            height: 22rem;
+            border-radius: 2rem;
+        }
+
+
+    .tarjetas-importantes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        gap: 2rem;
+    }
+
+    
+
+    .tarjeta-info{
+        width: 14rem;
+        height: auto;
+        border: 3px solid black;
+        border-radius: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+    }
+
+
+     .contenedor-icono-tarjeta{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .icono-tarjeta{
+                    width: 5rem;
+                    height: auto;
+                }
+
+            .titulo-tarjeta{
+                font-family: "Poppins",sans-serif;
+                text-decoration: underline;
+            }
+            
+            .info-rapida-tarjeta{
+                font-family: "Roboto", sans-serif;
+            }
+
+@media screen and (min-width:1280px){
+
+    #landing-page-main{
+        all: unset;
+        max-width: none;
+        width: 200%;
+        display: flex;
+        overflow-y: hidden;
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+
+    .deslizador-landingPage {
+            height: auto;
+            width: 100%;
+        }
+
+        .deslizador-landingPage.deslizar-izquierda {
+                width: 0px;
+                height: 0px;
+                transition: 1s;
+            }
+
+    #landing-page-main.deslizar-contenido-izquierda{
+        margin-top: 1rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        transition: 1s;
+    }
+
+    .seccion-informacion{
+        all: unset;
+        width: 100;
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+        gap:2rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        height: auto;
+        background: #fff;
+        border-radius: 1.2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .info-seccion-main{
+        all: unset;
+        background: transparent;
+    }
+
+    #mediaMain{
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #img-landing-page{
+        all: unset;
+        margin-bottom: 1rem;
+        width: auto;
+        height: auto;
+    }
+
+    [id$="-main"]{
+    scroll-margin-top:12rem;
+    }
+
+    .tarjetas-importantes{
+        all: unset;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #fff;
+    }
+
+    .tarjeta-info{
+        all: unset;
+        width: 17rem;
+        height: auto;
+        border: 3px solid black;
+        border-radius: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contenedor-icono-tarjeta{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+                .icono-tarjeta{
+                    width: 12rem;
+                    height: auto;
+                }
+
+            .titulo-tarjeta{
+                font-family: "Poppins",sans-serif;
+                text-decoration: underline;
+            }
+            
+            .info-rapida-tarjeta{
+                font-family: "Roboto", sans-serif;
+            }
+
+    #ecommerce-main{
+        opacity: 1;
+    }
+
+        #ecommerce-main.visible{
+            all: unset;
+            margin-top: 1rem;
+            width: 100%;
+            display: flex;
+            transition: 1s;
+            height: auto;
+            opacity: 1;
+            transition: ease-in 1s;
+            display: flex;
+            
+        }
+
+            #seccion-Ecommerce{
+                all: unset;
+                margin: 3rem;
+                display: flex;
+                flex-direction: row;
+                background-color: #fff !important;
+                border-radius: 1.2rem;
+                box-shadow: 34px 12px 24px 38px rgba(0, 0, 0, 0.08);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+                #infoEcommerce{
+                    all: unset;
+                    text-align: center;
+                    padding: 2rem;
+                    font-size: 1.8rem;
+                }
+
+                #img-ecommerce{
+                    width: auto;
+                    height: auto;
+
+                }
+
+
+        
+    #webCorporativa-main{
+        all:unset;
+        width: 100vw;
+    }
+
+    #seccion-webCorporativa{
+        all: unset;
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "fotoGrid infoGrid";
+        background-color: #fff !important;
+        border-radius: 1.2rem;
+        box-shadow: 34px 12px 24px 38px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease
+    }
+
+
+    #info-webCorporativa{
+        all: unset;
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+
+    
+
+    #info-webCorporativa{
+        all:unset;
+        grid-area: infoGrid;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: italic;
+        font-variation-settings: "wdth" 100;
+        padding: 2rem;
+        text-align: center;
+
+    }
+
+        .titulo-web-corporativa{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            font-style: normal;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+    #imagenCorporativa{
+        all:unset;
+        grid-area: fotoGrid;
+        width: 50%
+    }
+
+        #img-web-corporativa{
+            width: 50rem;
+            height: auto;
+        }
+
+
+
+    #blog-main{
+        all: unset;
+        display: flex;
+    }
+
+        #seccion-blog{
+            text-align: center;
+        }
+
+        #seccion-plataforma-personalizada{
+            text-align: center;
+        }
+        
+}

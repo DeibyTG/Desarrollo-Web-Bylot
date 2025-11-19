@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/variables.css">
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/nav.css">
+    <link rel="stylesheet" href="../css/layout/main.css">
+    <link rel="stylesheet" href="../css/layout/footer.css">
+    <link rel="stylesheet" href="../css/components/carousel.css">
+    <link rel="stylesheet" href="../css/pages/presupuesto.css">
+    <script defer src="../js/main.js" type="module"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor-enlaces-header" id="contenedor-header">
+            <div class="contenedor-logo">
+                <picture>
+                    <img alt="logo-empresa" class="logo-empresa-header" src="../img/logo-empresa.png">
+                </picture>
+            </div>
+            <div class="contenedor-opciones">
+                <ul class="contenedor-opciones-header">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li id="inicio-header"><a>presupuesto</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-enlaces-rrss">
+                <ul>
+                    <li>
+                        <a>
+                            <picture>
+                                <img class="icon-header" alt="icono-correo" src="../img/icons/icon-mail.png">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <picture>
+                                <img class="icon-header" alt="icono-telefono" src="../img/icons/icon-telefono.png">
+                            </picture>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <picture>
+                                <img class="icon-header" alt="icono-linkedin" src="../img/icons/icon-linkedin.png">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main-presupuesto">
+        <section class="contenedor-titulo">
+            <h2>Da el primer paso hacia el futuro</h2>
+            <p>"Cada proyecto es único. Pide tu presupuesto personalizado sin compromiso."</p>
+        </section>
+        <section class="contenedor-formulario">
+            <div class="parte-uno">
+                <form id="formulario1">
+                    <div id="parteSuperior">
+                        <fieldset id="fieldset1">
+                            <legend class="legend">Datos de Contato</legend>
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" placeholder="Escribe tu nombre.." maxlength="15" name="nombre">
+                                    <label for="apellidos">Apellidos</label>
+                                    <input type="text" placeholder="Indica tus apellidos..." name="apellidos" maxlength="40">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="tel" maxlength="9" placeholder="xxx-xxx-xxx" name="telefono">
+                                    <label for="correo">Correo Electronico</label>
+                                    <input type="email" placeholder="tucorreo@mail.com" name="correo">
+                        </fieldset>
+                        <fieldset id="fieldset2">
+                            <legend>Indica el tipo de página que te interesa</legend>
+                            <div id="informacionCliente">
+                                <label for="servicios">Selecciona un tipo de página</label>
+                                <select id="tiposervicios" name="servicios" >
+                                    <option value="inicio">Lista de paginas</option>
+                                    <option value="landing" >Landing Page</option>
+                                    <option value="ecommerce">Web E-commerce</option>
+                                    <option value="corporativa">Web Corporativa</option>
+                                    <option value="blog">Blog o página personalizada</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="plazo" id="mensajeRange">Plazo de creación (semanas).
+                                            Marque esta casilla en caso de que quiera un despliegue pactado.
+                                </label>
+                            </div>
+                            <input type="range" name="plazo" min="1" max="13" step="1" id="rangoTiempoEstimado" value="1">
+                        </fieldset>
+                    </div>
+                    <fieldset id="fieldset3">
+                        <legend>Servicios Adicionales (Opcional)</legend>
+                        <div>
+                            <label for="calendario">Calendario/Citas (60€)</label>
+                            <input type="checkbox" id="calendario" name="extras[]" value="calendario">
+                        </div>
+                        <div>
+                            <label for="pagos">Pasarela de Pago (300€)</label>
+                            <input type="checkbox" id="pagos" name="extras[]" value="pagos">
+                        </div>
+                        <div>
+                            <label for="perfiles">Creación de Perfiles (120€)</label>
+                            <input type="checkbox" id="perfiles" name="extras[]" value="perfiles">
+                        </div>
+                    </fieldset>
+                    <div class="contenedor-condiciones">
+                        <label for="condiciones">Acepto las condiciones de privacidad</label>
+                        <input type="checkbox" id="condiciones" name="condiciones">
+                    </div>
+                    <div id="botones">
+                        <button class="botones-apariencia" type="reset">Borrar todo</button>
+                        <button class="botones-apariencia" id="enviar" type="submit">Enviar</button>
+                    </div>
+                </form>        
+            </div>
+        </section>
+        <section class="resumen-presupuesto">
+            <fieldset>
+                <legend>Resumen del presupuesto</legend>
+                <div>
+                    <h3>Pagina Seleccionada</h3>
+                    <label class="datos-resumen-presupuesto" id="tipo-pagina"></label>
+                    <label class="datos-resumen-precio" id="precioBase"></label>
+                </div>
+                <div>
+                    <h3>Despliegue pactado</h3>
+                    <label class="datos-resumen-presupuesto" id="verTiempoEstimado"></label>
+                    <label class="datos-resumen-presupuesto" id="tiempo-estimado"></label>
+                </div>
+                    <div>
+                        <h3>Descuento x tiempo</h3>
+                        <label class="datos-resumen-presupuesto" id="verDescuentoAplicado"></label>
+                        <label class="datos-resumen-presupuesto" id="descuentoTiempo"></label>
+                    </div>
+                <div>
+                    <h3>Serivicios Extras</h3>
+                    <label class="datos-resumen-presupuesto" id="servicio-extras1"></label>
+                    <label class="datos-resumen-presupuesto" id="servicio-extras2"></label>
+                    <label class="datos-resumen-presupuesto" id="servicio-extras3"></label>
+                    <label class="datos-resumen-presupuesto" id="total-presupuesto"></label>
+                </div>
+                <div>
+                    <label id="totalPresupuesto">Total Presupuesto</label>
+                    <label id="cantidadTotalPresupuesto"></label>
+                </div>
+            </fieldset>
+        </section>  
+    </main>
+    <footer id="footer-index" class="footer">
+        <div class="seccion-empresa">
+            <div class="logo-nombre">
+                <picture>
+                    <img id="logo-footer" alt="logo del footer" src="../img/logo-empresa.png">
+                </picture>
+            </div>
+            <div class="slogan-footer">
+                <h3>“De tu idea a la realidad digital”</h3>
+            </div>
+        </div>
+        <div class="informacion-empresa">
+            <div class="contacto">
+                <ul>
+                    <label>Contacto</label>
+                    <li>Email: desarrollo.bylot@gmail.com</li>
+                    <li>Telefono: 611483400</li>
+                    <li>Dirección: Plaza L'om 11 1-4 Castello 46270 Valencia</li>
+                </ul>
+            </div>
+            <div class="redes">
+                <label>Redes</label>
+                <a>LinkedIn</a>
+                <a>Instagram</a>
+                <a>GitHub</a>
+            </div>
+            <div class="navegacion">
+                <a href="#landing-page-main">Landing Pages</a>
+                <a href="#ecommerce-main">Tiendas E-Commerce</a>
+                <a href="#webCorporativa-main">Web Corporativa</a>
+                <a href="#blog-main">Bolg/Portal de Contenido</a>
+            </div>
+        </div>
+        <div class="derechos-empresa">
+            <div class="indicador-derechos">
+                <label>© 2025 By/Lot - Todos los derechos reservados</label>
+            </div>
+            <div class="links-informativos">
+                <a>Aviso Legal</a>
+                <a>Privacidad</a>
+                <a>Cookies</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
